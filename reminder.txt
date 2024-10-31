@@ -1,0 +1,6 @@
+1. "git pull"
+2. "docker ps"
+3. "docker stop {gaugedb-ai-server-1}"
+4. "docker rmi {gaugedb-ai-server-1}"
+5. "docker compose up"
+6. "btop" resurssi seuranta

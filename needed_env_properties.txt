@@ -1,0 +1,18 @@
+ADMIN_USER  =""
+ADMIN_PASSW =""
+
+USER1_NAME =""
+USER2_NAME =""
+USER3_NAME =""
+USER4_NAME =""
+
+USER1_PWD =""
+USER2_PWD =""
+USER3_PWD =""
+USER4_PWD =""
+
+Ohjeet:
+1. Pääse csc käsiksi
+2. Pull project (ssh)
+3. Env tiedot
+4. "docker compose up"

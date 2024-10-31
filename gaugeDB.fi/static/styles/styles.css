@@ -1,0 +1,51 @@
+#wrapper {
+    width: 692px;
+    margin-top: 10px;
+}
+
+#gameBox {
+    background-color: rgb(124, 172, 132);
+    padding: 16px 32px;
+    height: 440px;
+    float: left;
+}
+
+#gameIdForm {
+    padding: 4px;
+}
+
+#functionButtonsBox {
+    background-color: rgb(180, 158, 125);
+    padding: 16px 32px;
+    height: 440px;
+    width: 250px;
+    float: right;
+}
+
+
+
+#forecastBox {
+    background-color: rgb(202, 202, 202);
+    padding: 4px 8px;
+    border-radius: 5px;
+    text-align: center;
+    font-size: 16px;
+    right: 70px;
+    height: 60px;
+    width: 230px;
+    position: static;
+    margin-top: 30px;
+    white-space: pre;
+}
+button {
+    background-color: rgb(170, 170, 170);
+    padding: 8px 16px;
+    border-radius: 10px;
+    text-align: center;
+    font-size: 16px;
+    right: 70px;
+    height: 50px;
+    width: 250px;
+    margin-top: 10px;
+
+}

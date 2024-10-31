@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/styles.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>GaugeDB</h1>
+    This is where all the redirection stuff goes.
+    <div id="wrapper">
+        <div id="gameBox">
+            <form id="gameIdForm" onsubmit="processData()">
+                Enter game [name/id]: <input id="gameId" type="text">
+            </form>
+            <button id="checkExistanceButton" onclick="checkExistance()">Check existance</button>
+        </div>
+        <div id="functionButtonsBox">
+            <button id="processGameButton" onclick="processGame()">Process game</button>
+            <button id="buildNumberGraphButton" onclick="buildNumberGraph()">Build number graph</button>
+            <button id="buildCorrelationButton" onclick="buildCorrelation()">Build correlation</button>
+            <button id="checkCorrelationButton" onclick="checkCorrelation()">Inspect correlations</button>
+            <button id="reCreateAiButton" onclick="reCreateAi()">Re-build ai</button>
+            <button id="forecastTodayButton" onclick="forecastToday()">Forecast today's votes up</button>
+            <div id="forecastBox">Votes up Num</div>
+        </div>
+    </div>
+<script src="{{ url_for('static',filename='scripts/index.js') }}"></script>
+</body>
+</html> 

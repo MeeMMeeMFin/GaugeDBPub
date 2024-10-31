@@ -1,0 +1,90 @@
+{
+  "info": {
+    "title": "APIFlask",
+    "version": "0.1.0"
+  },
+  "tags": [],
+  "paths": {
+    "/api/OPENAPI_JSON": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Get Openapi Json"
+      }
+    },
+    "/api/v1/today_forecast": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Today Prediction"
+      }
+    },
+    "/api/v1/correlation_builder": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Build Correlation Matrix"
+      }
+    },
+    "/api/v1/number_graph_builder": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Build Raw Numbers"
+      }
+    },
+    "/api/v1/build_new_ai/raw_number_graph": {
+      "get": {
+        "parameters": [],
+        "responses": {
+          "200": {
+            "content": {
+              "application/json": {
+                "schema": {}
+              }
+            },
+            "description": "Successful response"
+          }
+        },
+        "summary": "Re Build Ai"
+      }
+    }
+  },
+  "openapi": "3.0.3"
+}

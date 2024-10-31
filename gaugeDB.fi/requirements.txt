@@ -1,0 +1,5 @@
+flask==2.3.2
+requests==2.31.0
+flask-restful==0.3.10
+flask-swagger-ui
+apiflask==2.1.0

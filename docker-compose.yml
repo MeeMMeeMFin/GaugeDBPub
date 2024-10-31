@@ -1,0 +1,75 @@
+# Use root/example as user/password credentials
+version: '3.9'
+services:
+
+  database-server:
+    image: mongo:6.0
+    restart: always
+    environment:
+      MONGO_INITDB_ROOT_USERNAME: ${ADMIN_USER}
+      MONGO_INITDB_ROOT_PASSWORD: ${ADMIN_PASSW}
+      MONGODB_USER1_NAME: ${USER1_NAME}
+      MONGODB_USER2_NAME: ${USER2_NAME}
+      MONGODB_USER3_NAME: ${USER3_NAME}
+      MONGODB_USER4_NAME: ${USER4_NAME}
+      MONGODB_USER1_PWD: ${USER1_PWD}
+      MONGODB_USER2_PWD: ${USER2_PWD}
+      MONGODB_USER3_PWD: ${USER3_PWD}
+      MONGODB_USER4_PWD: ${USER4_PWD}
+      #MONGO_INITDB_DATABASE: testDB
+    ports:
+      - 27017:27017
+    volumes:
+        - ./database/mongo-init.js:/docker-entrypoint-initdb.d/mongo-init.js:ro
+        #- ./database/data-test:/data/db
+        #- ./database/test-data.json:/docker-entrypoint-initdb.d/test-data.json:ro
+
+  mongo-express:
+    image: mongo-express:1.0.0-alpha.4
+    restart: always
+    ports:
+      - 8081:8081
+    environment:
+      ME_CONFIG_MONGODB_ADMINUSERNAME: ${ADMIN_USER}
+      ME_CONFIG_MONGODB_ADMINPASSWORD: ${ADMIN_PASSW}
+      ME_CONFIG_MONGODB_URL: mongodb://${ADMIN_USER}:${ADMIN_PASSW}@database-server:27017/
+
+  preprocess-server:
+    environment:
+      USER2_NAME: ${USER2_NAME}
+      USER2_PWD: ${USER2_PWD}
+    build: './data-preprocess-server/'
+    ports:
+      - 5001:5001
+    depends_on:
+      - database-server
+
+  ai-server:
+    environment:
+      - USER3_NAME=${USER3_NAME}
+      - USER3_PWD=${USER3_PWD}
+    build: './ai-server/'
+    ports:
+      - 5002:5002
+    depends_on:
+      - database-server
+      - preprocess-server
+
+  admin-server:
+    environment:
+      - USER1_NAME=${USER1_NAME}
+      - USER1_PWD=${USER1_PWD}
+    build: './admin-server/'
+    ports:
+      - 5006:5006
+    depends_on:
+      - database-server
+      - ai-server
+      - preprocess-server
+
+  gaugedb:
+    build: './gaugeDB.fi/'
+    ports:
+      - 5008:5008
+    depends_on:
+      - admin-server

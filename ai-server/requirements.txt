@@ -1,0 +1,12 @@
+flask==2.3.2
+pandas==1.5.2
+pymongo==4.4.1
+requests==2.31.0
+python-dotenv==1.0.0
+tensorflow==2.13.0
+nltk==3.8.1
+scikit-learn==1.3.0
+matplotlib==3.7.2
+flask-restful==0.3.10
+flask-swagger-ui
+apiflask==2.1.0

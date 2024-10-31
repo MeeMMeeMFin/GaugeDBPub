@@ -1,0 +1,19 @@
+.wordBox {
+    display: inline-block;
+    width: 14.8%;
+    height: 30px;
+}
+
+.corrBlocks{
+    padding-top: 10px;
+    background-color: rgb(170, 170, 170);
+    width: 100%
+}
+
+.dataBlock{
+    display: inline-block;
+    width: 15%;
+    margin-left: 2px;
+    margin-right: 2px;
+    white-space: pre;
+}

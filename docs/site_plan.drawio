@@ -1,0 +1,58 @@
+<mxfile host="app.diagrams.net" modified="2023-08-24T08:18:15.623Z" agent="Mozilla/5.0 (Windows NT 10.0; Win64; x64; rv:109.0) Gecko/20100101 Firefox/116.0" etag="rGXPYCtg-vfqYARIXbvI" version="21.6.6">
+  <diagram name="Page-1" id="5g-07bswgh44FBVUQhK-">
+    <mxGraphModel dx="989" dy="546" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-2" value="&lt;font size=&quot;1&quot;&gt;&lt;b&gt;&lt;font style=&quot;font-size: 32px;&quot;&gt;GaugeDB&lt;/font&gt;&lt;/b&gt;&lt;/font&gt;" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="320" y="40" width="200" height="80" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-4" value="&lt;font style=&quot;font-size: 16px;&quot;&gt;&lt;i&gt;Game name or store ID&lt;br&gt;&lt;/i&gt;&lt;/font&gt;" style="text;html=1;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="120" y="190" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-8" value="Check existance" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="150" y="240" width="120" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-16" value="RE-CREATE AI" style="text;html=1;strokeColor=#666666;fillColor=#f5f5f5;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="120" y="480" width="200" height="40" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-17" value="" style="rounded=0;whiteSpace=wrap;html=1;fillColor=#d5e8d4;strokeColor=#82b366;" vertex="1" parent="1">
+          <mxGeometry x="120" y="320" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-21" value="" style="verticalLabelPosition=bottom;verticalAlign=top;html=1;shape=mxgraph.basic.orthogonal_triangle;rotation=-180;fillColor=#f8cecc;strokeColor=#b85450;" vertex="1" parent="1">
+          <mxGeometry x="120" y="320" width="200" height="120" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-22" value="&lt;i&gt;&lt;b&gt;game name?&lt;/b&gt;&lt;/i&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="120" y="160" width="90" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-23" value="" style="ellipse;shape=cloud;whiteSpace=wrap;html=1;" vertex="1" parent="1">
+          <mxGeometry x="30" width="250" height="150" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-25" style="edgeStyle=orthogonalEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;exitX=0.5;exitY=0;exitDx=0;exitDy=0;entryX=0.539;entryY=0.867;entryDx=0;entryDy=0;entryPerimeter=0;" edge="1" parent="1" source="wD9zTkT-54h6XAgeUgsC-22" target="wD9zTkT-54h6XAgeUgsC-23">
+          <mxGeometry relative="1" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-26" value="&lt;b&gt;&lt;font style=&quot;font-size: 12px;&quot;&gt;the spelling needs to be perfect if fails just use the number in the url which is the store ID&lt;/font&gt;&lt;/b&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="96.25" y="45" width="137.5" height="60" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-10" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;Process game&lt;/font&gt;" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="200" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-13" value="Build number graph" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="240" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-15" value="Build correlation" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="280" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-14" value="Check correlation" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="320" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-11" value="Forecast today&#39;s votes up" style="text;strokeColor=#666666;fillColor=#f5f5f5;align=left;verticalAlign=middle;spacingLeft=4;spacingRight=4;overflow=hidden;points=[[0,0.5],[1,0.5]];portConstraint=eastwest;rotatable=0;whiteSpace=wrap;html=1;fontSize=14;fontColor=#333333;" vertex="1" parent="1">
+          <mxGeometry x="440" y="360" width="200" height="30" as="geometry" />
+        </mxCell>
+        <mxCell id="wD9zTkT-54h6XAgeUgsC-28" value="&lt;font style=&quot;font-size: 14px;&quot;&gt;&lt;i&gt;Forecast&lt;/i&gt;&lt;/font&gt;" style="rounded=1;whiteSpace=wrap;html=1;fillColor=#f5f5f5;fontColor=#333333;strokeColor=#666666;" vertex="1" parent="1">
+          <mxGeometry x="440" y="410" width="200" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>

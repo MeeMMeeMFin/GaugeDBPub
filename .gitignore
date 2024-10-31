@@ -1,0 +1,5 @@
+.env
+database/data-test/
+data-preprocess-server/preprocess_tools/__pycache__/
+ai-server/__pycache__/
+.pyc

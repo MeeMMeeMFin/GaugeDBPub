@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{{ url_for('static',filename='styles/correlation.css') }}">
+    <title>Document</title>
+</head>
+<body>
+    <h1>
+        <div id="gameName">Pending... </div> correlations:
+    </h1>
+    This is where correlations can be inspected.<br>
+    <input id="topEntriesAmount" type="number" placeholder="Top correlations amount"><br>
+    <input id="word1" class="wordBox" type="text" placeholder="Word1">
+    <input id="word2" class="wordBox" type="text" placeholder="Word2">
+    <input id="word3" class="wordBox" type="text" placeholder="Word3">
+    <input id="word4" class="wordBox" type="text" placeholder="Word4">
+    <input id="word5" class="wordBox" type="text" placeholder="Word5">
+    <button onclick="getCorrelations()">Execute</button>
+    <!--Could replace with <table> in future-->
+    <div class="corrBlocks">
+        <div id="block1" class="dataBlock">Pending</div>
+        <div id="block2" class="dataBlock">Pending</div>
+        <div id="block3" class="dataBlock">Pending</div>
+        <div id="block4" class="dataBlock">Pending</div>
+        <div id="block5" class="dataBlock">Pending</div>
+    </div>
+<script src="{{ url_for('static',filename='scripts/correlation.js') }}"></script>
+</body>
+</html> 

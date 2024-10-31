@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Home</h1>
+    This is where all the redirection stuff goes.
+    <button id="myButton1" onclick="databaseExpress()">To mongo express</button>
+    <form id="gameIdForm" onsubmit="processData()">
+        Enter game [name/id]: <input id="gameId" type="text"><button type="submit">Process Game</button>
+    </form>
+<script>
+function databaseExpress(){
+    location.href = "http://localhost:8081/";
+};
+
+function processData(){
+    let game_name = document.getElementById("gameId").value;
+    result = "http://localhost:5001/api/v1/process_game?game_name=" + game_name
+    alert(result)
+    location.href = result;
+};
+
+gameIdForm = document.getElementById("gameIdForm")
+
+gameIdForm.addEventListener("submit", processData)</script>
+<!--<script src="http://localhost:5001/microservices/index.js"></script>-->
+</body>
+</html>
